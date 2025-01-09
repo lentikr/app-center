@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: app-center:latest
+    container_name: app-center
+    ports:
+      - "3000:3000"
+    restart: always
+    environment:
+      - NODE_ENV=production
