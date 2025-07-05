@@ -58,7 +58,7 @@ export function getApps() {
       icon: '/icons/hajimi.svg',
       title: 'Hajimi',
       description: '一个基于 FastAPI 构建的 Gemini API 代理',
-      href: 'https://hajimi.lentikr.top'
+      href: 'https://gap.lentikr.top'
     }
   ].sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'));
 }
