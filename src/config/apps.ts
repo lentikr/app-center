@@ -6,15 +6,6 @@ export interface AppInfo {
   href: string
 }
 
-// 定义外部应用的端口映射
-// const externalPorts = {
-//   alist: '5244',
-//   memos: '5230',
-//   portainer: '9443'
-// } as const;
-
-// 定义应用配置生成函数
-// export function getApps(hostname: string = '') {
 export function getApps() {
   // 获取基础域名
   // const baseUrl = hostname || 'localhost';
@@ -27,20 +18,6 @@ export function getApps() {
       description: '根据所提供的出租车发票金额，计算出最合理的报销部分',
       href: '/taxi_calc'  // 内部路由
     },
-    // {
-    //   id: 'alist',
-    //   icon: '/icons/cloud.svg',
-    //   title: 'Alist',
-    //   description: '一个支持多种存储的文件列表程序，使用 Gin 和 Solidjs 驱动',
-    //   href: `http://${baseUrl}:${externalPorts.alist}`
-    // },
-    // {
-    //   id: 'memos',
-    //   icon: '/icons/memos.svg',
-    //   title: 'Memos',
-    //   description: '一个开源轻量级的笔记解决方案',
-    //   href: `http://${baseUrl}:${externalPorts.memos}`
-    // },
     {
       id: 'mobaxterm',
       icon: '/icons/mobaxterm.svg',
@@ -48,12 +25,40 @@ export function getApps() {
       description: 'Mobaxterm激活文件生成工具',
       href: '/moba'  // 内部路由
     },
-    // {
-    //   id: 'portainer',
-    //   icon: '/icons/portainer.svg',
-    //   title: 'Portainer',
-    //   description: '让 Docker 和 Kubernetes 的管理变得简单',
-    //   href: `https://${baseUrl}:${externalPorts.portainer}`  // 注意这里使用 https
-    // }
+    {
+      id: 'fdrive',
+      icon: '/icons/fdrive.svg',
+      title: 'Fdrive',
+      description: '基于Cloudflare R2的webdav服务',
+      href: 'https://fdrive.lentikr.top'
+    },
+    {
+      id: 'secf',
+      icon: '/icons/secf.svg',
+      title: 'SecF',
+      description: '基于Cloudflare KV存储的文本文件公共访问服务',
+      href: 'https://secf.lentikr.top'
+    },
+    {
+      id: 'libretv',
+      icon: '/icons/libretv.svg',
+      title: 'LibreTV',
+      description: '轻量级、免费的在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务',
+      href: 'https://m.lentikr.top'
+    },
+    {
+      id: 'moemail',
+      icon: '/icons/moemail.png',
+      title: 'MoeMail',
+      description: '一个基于 NextJS + Cloudflare 技术栈构建的可爱临时邮箱服务',
+      href: 'https://moemail.lentikr.top'
+    },
+    {
+      id: 'hajimi',
+      icon: '/icons/hajimi.svg',
+      title: 'Hajimi',
+      description: '一个基于 FastAPI 构建的 Gemini API 代理',
+      href: 'https://hajimi.lentikr.top'
+    }
   ].sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'));
 }
