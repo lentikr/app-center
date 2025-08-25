@@ -40,11 +40,11 @@ export function getApps() {
       href: 'https://secf.lentikr.top'
     },
     {
-      id: 'libretv',
-      icon: '/icons/libretv.svg',
-      title: 'LibreTV',
-      description: '轻量级、免费的在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务',
-      href: 'https://m.lentikr.top'
+      id: 'moontv',
+      icon: '/icons/moontv.png',
+      title: 'MoonTV',
+      description: '一个开箱即用的、跨平台的影视聚合播放器',
+      href: 'https://moon.lentikr.top'
     },
     {
       id: 'moemail',
