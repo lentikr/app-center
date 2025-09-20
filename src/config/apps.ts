@@ -54,10 +54,10 @@ export function getApps() {
       href: 'https://moemail.lentikr.top'
     },
     {
-      id: 'hajimi',
-      icon: '/icons/hajimi.svg',
-      title: 'Hajimi',
-      description: '一个基于 FastAPI 构建的 Gemini API 代理',
+      id: 'linkding',
+      icon: '/icons/linkding.svg',
+      title: 'Linkding',
+      description: '一个设计精简、运行速度快，并且易于 Docker 部署的书签管理器',
       href: 'https://hajimi.lentikr.top'
     }
   ].sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'));
