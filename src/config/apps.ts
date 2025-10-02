@@ -44,7 +44,7 @@ export function getApps() {
       icon: '/icons/moontv.png',
       title: 'MoonTV',
       description: '一个开箱即用的、跨平台的影视聚合播放器',
-      href: 'https://moon.lentikr.top'
+      href: 'https://tv.lentikr.top'
     },
     {
       id: 'moemail',
